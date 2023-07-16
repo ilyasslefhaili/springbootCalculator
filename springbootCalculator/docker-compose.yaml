@@ -1,0 +1,12 @@
+version: '3.3'
+services:
+  dev-db:
+    image: postgres:alpine
+    ports:
+      - "5434:5432"
+    environment:
+      POSTGRES_USER: ilyass
+      POSTGRES_PASSWORD: 123
+      POSTGRES_DB: calculator
+networks:
+  default:

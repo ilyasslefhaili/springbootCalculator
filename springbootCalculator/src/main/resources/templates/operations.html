@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Operations List</title>
+</head>
+<body>
+<h1>Operations List</h1>
+<table>
+    <tr>
+        <th>num1</th>
+        <th>num2</th>
+        <th>operator</th>
+    </tr>
+    <tr th:each="operation : ${operations}">
+        <td th:text="${operation.num1}"></td>
+        <td th:text="${operation.num2}"></td>
+        <td th:text="${operation.operator}"></td>
+    </tr>
+</table>
+</body>
+</html>

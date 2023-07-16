@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <title>Exception List</title>
+</head>
+<body>
+<h1>Exception List</h1>
+
+<table>
+  <tr>
+    <th>Type</th>
+    <th>Description</th>
+  </tr>
+  <tr th:each="exception : ${exceptions}">
+    <td th:text="${exception.title}"></td>
+    <td th:text="${exception.description}"></td>
+  </tr>
+</table>
+</body>
+</html>
